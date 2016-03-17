@@ -59,3 +59,35 @@ minetest.register_craft({
 		}
 	}
 )
+
+--dagger
+minetest.register_tool("tools_obsidian:dagger_obsidian", {
+	description = "Obsidian Dagger",
+	inventory_image = "tools_obsidian_dagger.png",
+	wield_image = "tools_obsidian_dagger_wield.png",
+	wield_scale = {x=1.2,y=1,z=.4},
+	tool_capabilities = {
+		full_punch_interval = 0,
+		max_drop_level=1,
+        stack_max = 1,
+        range = 3.0,
+		max_drop_level=2,
+		groupcaps={
+			snappy={times={[1]=1.90, [2]=0.90, [3]=0.30}, uses=40, maxlevel=3},
+		},
+		damage_groups = {fleshy=3.2},
+	}
+})
+
+minetest.register_craft({
+		output = "tools_obsidian:dagger_obsidian",
+		recipe = {
+			{"default:obsidian_glass", "default:obsidian", "default:diamond"},
+			{"default:mese_crystal", "default:diamond", "default:obsidian_shard"},
+			{"bucket:bucket_lava", "default:mese_crystal", "default:obsidian_glass"}
+		},
+		replacements = {
+			{"bucket:bucket_lava", "bucket:bucket_empty"},
+		}
+	}
+)

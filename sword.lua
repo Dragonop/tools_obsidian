@@ -23,7 +23,7 @@ minetest.register_craft({
 			{"bucket:bucket_lava", "default:mese_crystal", "default:obsidian_glass"}
 		},
 		replacements = {
-			{"bucket:bucket_lava", "default:steel_ingot 3"},
+			{"bucket:bucket_lava", "bucket:bucket_empty"},
 		}
 	}
 )
@@ -55,7 +55,7 @@ minetest.register_craft({
 			{"bucket:bucket_lava", "default:mese_crystal", "default:obsidian_glass"}
 		},
 		replacements = {
-			{"bucket:bucket_lava", "default:steel_ingot 3"},
+			{"bucket:bucket_lava", "bucket:bucket_empty"},
 		}
 	}
 )
@@ -67,7 +67,7 @@ minetest.register_tool("tools_obsidian:dagger_obsidian", {
 	wield_image = "tools_obsidian_dagger_wield.png",
 	wield_scale = {x=1.2,y=1,z=.4},
 	tool_capabilities = {
-		full_punch_interval = 0,
+		full_punch_interval = .2,
 		max_drop_level=1,
         stack_max = 1,
         range = 3.0,
@@ -75,7 +75,7 @@ minetest.register_tool("tools_obsidian:dagger_obsidian", {
 		groupcaps={
 			snappy={times={[1]=1.90, [2]=0.90, [3]=0.30}, uses=40, maxlevel=3},
 		},
-		damage_groups = {fleshy=3.2},
+		damage_groups = {fleshy=2},
 	}
 })
 

@@ -82,9 +82,9 @@ minetest.register_tool("tools_obsidian:dagger_obsidian", {
 minetest.register_craft({
 		output = "tools_obsidian:dagger_obsidian",
 		recipe = {
-			{"default:obsidian_glass", "default:obsidian", "default:diamond"},
-			{"default:mese_crystal", "default:diamond", "default:obsidian_shard"},
-			{"bucket:bucket_lava", "default:mese_crystal", "default:obsidian_glass"}
+			{"default:obsidian_glass", "default:obsidian", "default:obsidian_shard"},
+			{"default:mese_crystal_fragment", "default:obsidian_shard", "default:diamond"},
+			{"bucket:bucket_lava", "default:mese_crystal_fragment", "default:obsidian_glass"}
 		},
 		replacements = {
 			{"bucket:bucket_lava", "bucket:bucket_empty"},

@@ -41,7 +41,7 @@ minetest.register_tool("tools_obsidian:longsword_obsidian", {
         range = 4.0,
 		max_drop_level=2,
 		groupcaps={
-			snappy={times={[1]=1.10, [2]=0.45, [3]=0.10}, uses=40, maxlevel=3},
+			snappy={times={[1]=1.90, [2]=0.90, [3]=0.30}, uses=40, maxlevel=3},
 		},
 		damage_groups = {fleshy=26},
 	}

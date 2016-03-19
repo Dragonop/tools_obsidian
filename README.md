@@ -1,5 +1,5 @@
 # tools_obsidian
-Minetest Obsidian Tools mod. Adds obsidian sword and longsword.
+Minetest Obsidian Tools mod. Adds obsidian sword, dagger and longsword.
 
 Dependencies: 
 Default

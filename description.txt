@@ -1,1 +1,1 @@
-Adds an Obsidian Longsword, and an Obsidian Sword.
+Adds obsidian dagger, sword, and longsword.

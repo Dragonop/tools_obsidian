@@ -1,7 +1,7 @@
 # tools_obsidian
 Minetest Obsidian Tools mod.
 Adds the obsidian sword, dagger and longsword.  
-Also adds obsidian pickaxe, axe, and shovel, for completeness.  
+Also adds the obsidian axe, pickaxe, and shovel, for completeness.  
 
 Each weapon has its uses, advantages, and tradeoffs.  
 

@@ -1,15 +1,3 @@
-local t_uses = {}
-local tool_wear_enabled = minetest.settings:get_bool("enable_tool_wear")
-if tool_wear_enabled == nil then
-	-- Default is enabled
-	tool_wear_enabled = true
-end
-
-if tool_wear_enabled then
-	t_uses.twenty = 20
-else
-	t_uses.twenty = 0
-end
 
 --sword
 minetest.register_tool("tools_obsidian:sword_obsidian", {
@@ -18,7 +6,6 @@ minetest.register_tool("tools_obsidian:sword_obsidian", {
 	wield_scale = {x=1.2,y=1,z=.4},
 	tool_capabilities = {
 		full_punch_interval = 1.0,
-		max_drop_level=1,
         stack_max = 1,
         range = 4.0,
 		max_drop_level=1,
@@ -52,7 +39,6 @@ minetest.register_tool("tools_obsidian:longsword_obsidian", {
 	wield_scale = {x=2,y=1.3,z=.4},
 	tool_capabilities = {
 		full_punch_interval = 4.2,
-		max_drop_level=2,
         stack_max = 1,
         range = 6.0,
 		max_drop_level=2,
@@ -86,7 +72,6 @@ minetest.register_tool("tools_obsidian:dagger_obsidian", {
 	wield_scale = {x=1.2,y=1,z=.4},
 	tool_capabilities = {
 		full_punch_interval = .4,
-		max_drop_level=1,
         stack_max = 1,
         range = 3.0,
 		max_drop_level=2,
